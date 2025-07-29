@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRIP - Plan de Inversión Privada</title>
+    <style>
+        /* Variables de color basadas en la identidad de PRIP */
+        :root {
+            --primary: #2A4365;  /* Azul oscuro principal */
+            --secondary: #F6AD55; /* Amarillo/naranja acento */
+            --accent: #38A169;    /* Verde para elementos destacados */
+            --light: #F7FAFC;     /* Fondo claro */
+            --dark: #1A202C;      /* Texto oscuro */
+            --gray: #E2E8F0;     /* Gris para bordes */
+        }
+        
+        /* Estilos base */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: var(--dark);
+            line-height: 1.6;
+            background-color: var(--light);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header */
+        header {
+            background-color: var(--primary);
+            color: white;
+            padding: 20px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary) 0%, #3B82F6 100%);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 30px;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: var(--secondary);
+            color: var(--dark);
+            padding: 12px 30px;
+            border-radius: 30px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .cta-button:hover {
+            background-color: #E69C3A;
+            transform: translateY(-3px);
+        }
+        
+        /* About Section */
+        .about {
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .section-title {
+            color: var(--primary);
+            margin-bottom: 40px;
+            font-size: 2rem;
+        }
+        
+        /* Services Section */
+        .services {
+            padding: 80px 0;
+            background-color: #F8F9FA;
+        }
+        
+        .service-cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .service-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            padding: 30px;
+            width: 300px;
+            transition: transform 0.3s ease;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .service-card h3 {
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+        
+        .service-card .price {
+            font-size: 1.5rem;
+            color: var(--accent);
+            font-weight: bold;
+            margin: 15px 0;
+        }
+        
+        /* Testimonials */
+        .testimonials {
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        /* CTA Section */
+        .cta-section {
+            background-color: var(--primary);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--dark);
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .service-cards {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">PRIP</div>
+            <!-- Menú de navegación podría ir aquí -->
+        </div>
+    </header>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>"Invierte hoy, disfruta mañana"</h1>
+            <p>Una alternativa estratégica y confiable para construir tu futuro financiero.</p>
+            <a href="#services" class="cta-button">Conoce nuestros planes</a>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">¿Qué es PRIP?</h2>
+            <p>PRIP es un plan de inversión privada y gestionada, creado para ayudarte a construir una pensión anticipada en un periodo de 3 a 5 años.</p>
+            <p>Tu dinero no lo manejas tú,Lo gestiona un equipo profesional con experiencia real en el mercado financiero.</p>
+            <p>No necesitas saber de trading,Solo necesitas compromiso con tu futuro.</p>
+        </div>
+    </section>
+    
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title">Nuestros Servicios</h2>
+            <div class="service-cards">
+                <!-- Servicio 1 -->
+                <div class="service-card">
+                    <h3>PRIP CAPITAL LITE</h3>
+                    <p>Desde $200 A 10.000 | Duración: 3 a 5 años</p>
+                    <p>Ideal para quienes desean construir un capital sólido a mediano plazo.</p>
+                    <h5>"💼¡Futuro seguro con CAPITAL LIFE!</h5>
+                    <p>✅ Aportes mensuales fijos</p>
+                    <p>✅ Duración: 5 años </p>
+                    <p>Ideal para construir libertad financiera paso a paso.</p>
+                </div>
+                
+                <!-- Servicio 2 -->
+                <div class="service-card">
+                    <h3>PRIP 90X</h3>
+                    <p>Desde $100,200,500,1000,5000... | Rentabilidad cada 3 meses</p>
+                    <p>Diseñado para quienes desean ganancias más inmediatas sin largo plazo.</p>
+                    <h5>🚀 ¿Inversiones rápidas? ¡PRIP 90X es tu solución!</h5>
+                    <p>Retornos Trimestrales en solo 3 meses</p>
+                    <p>Perfecto para rotar capital ymaximixar ganancias<tag>
+                        <!--Tab to edit-->
+                    </tag></p>
+                </div>
+                
+                <!-- Servicio 3 -->
+                <div class="service-card">
+                    <h3>BOXEAQUILE (CANAL DE SEÑALES)</h3>
+                    <p>Para traders activos que buscan señales, entradas y superar pruebas de fondeo.</p>
+                    <p>🔥OFERTA: !75% OFF!</p>
+                    <p>Plan por tan solo 25$(Antes 100$)</p>
+                    <p>✅ Cash mensual de $25 USD</p>
+                    <p>✅ Señales diarias + análisis</p>
+                    <p>✅ Estrategias para fondos reales,Para traders con lógica, pero sin resultados.</p>
+                    <p>¿Pierdes en trading? ¡BOXEAQUILE cambia tu juego!</p>
+                    <p>Señales profesionales en:</p>
+                    <h5>✅-XAUUSD</h5>
+                    <h5>✅-EUR/USD</h5>
+                    <h5>✅-NAS100</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- How it works -->
+    <section class="about">
+        <div class="container">
+            <h2 class="section-title">¿Cómo funciona PRIP?</h2>
+            <ul>
+                <li>Nosotros gestionamos tu capital, tú solo recibes reportes.</li>
+                <li>Recibes beneficios según tu tipo de plan.</li>
+                <li>Retiras o reinviertes tus ganancias al finalizar tu periodo.</li>
+                <li>Te registras con tu capital inicial según el plan que elijas.</li>
+                <li>Firmas tu contrato personalizado, con condiciones claras.</li>
+            </ul>
+        </div>
+    </section>
+    
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Lo que dicen nuestros usuarios</h2>
+            <div class="testimonial-quotes">
+                <blockquote>"Al fin tengo una forma real de invertir sin complicarme."</blockquote>
+                <blockquote>"No sabía nada de finanzas, y hoy tengo un plan de retiro claro."</blockquote>
+                <blockquote>"El equipo me ayudó a crecer mi dinero sin estrés ni falsas promesas."</blockquote>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Final CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>¿Listo para construir tu futuro financiero?</h2>
+            <p>Comienza hoy mismo con el plan que mejor se adapte a tus metas.</p>
+            <a href="https://wa.link/elt64m" class="cta-button">Quiero empezar</a>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>PRIP - Plan de Inversión Privada</p>
+            <p>contacto@correoprip.com</p>
+            <p>© 2025 PRIP. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
+
+
+
+
